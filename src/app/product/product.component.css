@@ -1,0 +1,36 @@
+.product_section ul{
+   display: flex; 
+   justify-content: space-around;
+   box-sizing: border-box; /* Include padding and borders in the width */
+
+}
+
+.product_section ul li a{
+height: 20rem;
+width: 35rem;
+border: 2px solid whitesmoke;
+border-radius: 1.5rem;
+overflow: hidden;
+}
+.product_section ul li{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid whitesmoke;
+    overflow: hidden;
+    padding:5px;
+}
+.buy-button{
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor:pointer;
+}
+.buy-button:disabled {
+    background-color: #CCCCCC;
+    cursor: not-allowed; 
+    color: #666; 
+    border: 1px solid #999;
+    opacity: 0.6;
+  }
+  

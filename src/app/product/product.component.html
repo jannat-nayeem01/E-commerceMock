@@ -1,0 +1,39 @@
+<section class="product_section">
+    
+        <ul>
+            <li>
+                <div class="product-details">
+                    <h2>Product Name</h2>
+                    <p>Product Description</p>
+                    <p>Stock Availability: {{ stockAvailability }}</p>
+                    <!-- Property Binding -->
+<button [disabled]="!isInStock" [style.background]="'red'" (click)="buyNow()" class="buy-button">Buy Now (Property Binding)</button>
+
+<!-- String Interpolation -->
+<button [disabled]="!isInStock" [style.background]="buttonColor" (click)="buyNow()" class="buy-button">Buy Now (String Interpolation)</button>
+
+                  </div>
+
+                    <a><img src="assets/iPhone01.jpeg" alt="Product Image"></a>
+                  
+            </li>
+            <li>
+                <div class="product-details">
+                    <h2>Product Name</h2>
+                    <p>Product Description</p>
+                    <p>Stock Availability: {{ stock }}</p>
+                    <!-- Property Binding -->
+<button [disabled]="!isInStock" [style.background]="'red'" (click)="buyNow()" class="buy-button">Buy Now (Property Binding)</button>
+
+<!-- String Interpolation -->
+<button [disabled]="!isInStock" [style.background]="buttonColor" (click)="buyNow()" class="buy-button">Buy Now (String Interpolation)</button>
+
+                  </div>
+
+                    <a><img src="assets/iPhone02.jpeg" alt="Product Image"></a>
+                  
+            </li>
+        </ul>
+
+    
+</section>
